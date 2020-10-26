@@ -90,14 +90,7 @@ namespace SaiterBot
                 });
         }
 
-        private void RegisterRenchCommand()
-        {
-            commands.CreateCommand("rench")
-                .Do(async (e) =>
-                {
-                    await e.Channel.SendMessage("Привет " + e.User.Name + ". Тебя имел. И мать твою имел");
-                });
-        }
+        
 
         private void RegisterHelpCommand()
         {
@@ -105,9 +98,8 @@ namespace SaiterBot
                 .Do(async (e) =>
                 {
                     await e.Channel.SendMessage("Список команд:");
-                    await e.Channel.SendMessage("@hello - Fucking bot попреведствует тебя");
+                    await e.Channel.SendMessage("@hello - bot попреведствует тебя");
                     await e.Channel.SendMessage("@hack - ненужная дичь, но Саитер замутил");
-                    await e.Channel.SendMessage("@rench - шутка про мамку");
                 });
         }
 
